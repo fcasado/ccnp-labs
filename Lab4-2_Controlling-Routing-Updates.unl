@@ -6,12 +6,12 @@
         <interface id="0" name="e0/0" type="ethernet" network_id="1"/>
         <interface id="1" type="serial" name="s1/0" remote_id="2" remote_if="1"/>
       </node>
-      <node id="2" name="R2" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="1" left="528" top="249">
+      <node id="2" name="R2" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1500" serial="1" console="" delay="0" icon="Router.png" config="1" left="528" top="249">
         <interface id="0" name="e0/0" type="ethernet" network_id="2"/>
         <interface id="1" type="serial" name="s1/0" remote_id="1" remote_if="1"/>
         <interface id="17" type="serial" name="s1/1" remote_id="3" remote_if="17"/>
       </node>
-      <node id="3" name="R3" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="1" left="900" top="483">
+      <node id="3" name="R3" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1500" serial="1" console="" delay="0" icon="Router.png" config="1" left="900" top="483">
         <interface id="0" name="e0/0" type="ethernet" network_id="3"/>
         <interface id="16" name="e0/1" type="ethernet" network_id="4"/>
         <interface id="17" type="serial" name="s1/1" remote_id="2" remote_if="17"/>

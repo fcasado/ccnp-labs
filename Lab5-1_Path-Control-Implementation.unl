@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lab name="Lab5-1_Path-Control-Implementation" id="c8428ef7-9099-4020-bf90-eb3d152cf217" version="1" scripttimeout="300" lock="0">
+  <topology>
+    <nodes>
+      <node id="1" name="R1" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="0" left="138" top="420">
+        <interface id="1" type="serial" name="s1/0" remote_id="2" remote_if="1"/>
+        <interface id="17" type="serial" name="s1/1" remote_id="3" remote_if="1"/>
+      </node>
+      <node id="2" name="R2" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="0" left="315" top="162">
+        <interface id="1" type="serial" name="s1/0" remote_id="1" remote_if="1"/>
+        <interface id="17" type="serial" name="s1/1" remote_id="3" remote_if="17"/>
+      </node>
+      <node id="3" name="R3" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="0" left="495" top="423">
+        <interface id="1" type="serial" name="s1/0" remote_id="1" remote_if="17"/>
+        <interface id="17" type="serial" name="s1/1" remote_id="2" remote_if="17"/>
+        <interface id="33" type="serial" name="s1/2" remote_id="4" remote_if="1"/>
+      </node>
+      <node id="4" name="R4" type="iol" template="iol" image="i86bi-linux-l3-adventerprisek9-15.5.2T.bin" ethernet="1" nvram="1024" ram="1024" serial="1" console="" delay="0" icon="Router.png" config="0" left="810" top="423">
+        <interface id="1" type="serial" name="s1/0" remote_id="3" remote_if="33"/>
+      </node>
+    </nodes>
+  </topology>
+</lab>
